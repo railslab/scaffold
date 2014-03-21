@@ -33,6 +33,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# carregar .env em ENV
+gem 'dotenv-rails', groups: [:development, :test]
+
+# servidor de processos
+gem 'foreman', group: :development
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
